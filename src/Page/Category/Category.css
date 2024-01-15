@@ -1,0 +1,122 @@
+.left-category {
+    width: 30%;
+    /* background: linear-gradient(14deg, rgba(173,195,217,1) 44%, rgba(221,106,106,1) 90%); */
+    /* background: linear-gradient(45deg, var(--bg-card1) 0, var(--bg-card2) 58%); */
+    background-color: var(--bg-gray);
+    border-radius: 5px;
+    padding: 20px;
+    box-shadow: 0px 9px 20px 0px rgba(14, 88, 48, 0.1);
+    height: fit-content;
+    position: sticky;
+    top: 20px;
+  }
+  .category-parent{
+    display: flex;
+    width: 95%;
+    margin: auto;
+  }
+  .right-category{
+    width: 70%;
+  }
+  
+  h4 {
+    font-size: 18px;
+    font-weight: 500;
+    color: var(--text-color) !important;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  
+  .price-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 10px;
+  }
+  
+  .label-left-category {
+    font-size: 14px;
+    font-weight: 500;
+    color: var(--text-color);
+  }
+
+  .radio-left-category{
+    color: var(--text-color);
+  }
+  
+  .p-filter-category {
+    font-size: 16px;
+    font-weight: 600;
+    color: var(--text-color);
+  }
+  
+  .range-slider {
+    width: 100%;
+    position: relative;
+    margin: auto;
+    margin: 30px auto;
+  }
+  
+  .range-fill {
+    height: 6px;
+    background-color: #36b37e;
+    position: absolute;
+    z-index: 1;
+  }
+  
+  input[type="range"] {
+    -webkit-appearance: none;
+    width: 100%;
+    background: transparent;
+    position: absolute;
+    left: 0;
+  }
+  
+  input[type="range"]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    height: 15px;
+    width: 15px;
+    border-radius: 50%;
+    background: #36b37e;
+    cursor: pointer;
+    margin-top: -5px;
+    position: relative;
+    z-index: 1;
+  }
+  
+  input[type="range"]::-webkit-slider-runnable-track {
+    width: 100%;
+    height: 5px;
+    background: #e8e8e8;
+    border-radius: 3px;
+    border: none;
+  }
+  .button-filter-category{
+    width: 100%;
+    border: none;
+    border-radius: 5px;
+    text-align: center;
+    padding: 5px;
+    background-color: var(--primary-color);
+    color: black;
+    transition: 0.3s;
+  }
+  .button-filter-category:hover{
+    background-color: black;
+    color: white;
+  }
+  .main-right-category{
+    text-align: center;
+  }
+  @media(max-width:850px){
+    .category-parent{
+        flex-flow: column-reverse
+    }
+    .left-category{
+        position: static;
+        width: 100%;
+    }
+    .right-category{
+        width: 100%;
+    }
+  }

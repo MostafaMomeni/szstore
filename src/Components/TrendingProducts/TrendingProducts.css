@@ -1,0 +1,21 @@
+.trending-products-parent{
+    width: 90%;
+    margin: auto;
+    padding: 5px;
+}
+.trending-products{
+    margin-top: 2rem;
+    padding: 1.5rem;
+    text-align: center;
+}
+@media(max-width:635px){
+    .trending-products-parent{
+        width: 100%;
+    }
+}
+@media(max-width:450px){
+    .trending-products{
+        margin: 0;
+        padding: 0;
+    }
+}

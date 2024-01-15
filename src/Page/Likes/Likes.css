@@ -1,0 +1,33 @@
+.button-likes{
+    background-color: var(--primary-color);
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    text-align: center;
+    color: black;
+    transition: 0.3s;
+}
+.button-likes:hover{
+    background-color: black;
+    color: white;
+}
+.items-cart-Likes-cart{
+    min-width: 550px;
+}
+.cart-likes{
+    width: 80%;
+    padding: 4vh 5vh;
+    border-radius: 1rem;
+    background-color: var(--bg-gray);
+    margin: 20px auto;
+    border-radius: 30px;
+}
+@media(max-width:500px){
+    .cart-likes{
+        width: 95%;
+        padding: 25px 5px;
+    }
+    .button-likes{
+        font-size: 10px;
+    }
+}

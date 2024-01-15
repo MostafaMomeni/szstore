@@ -1,0 +1,11 @@
+.new-products>div{
+    padding-bottom: 50px;
+}
+.new-products{
+    width: 90%;
+    margin: auto;
+}
+.new-products-parent{
+    background-color: var(--bg-gray);
+    padding: 30px 10px;
+}

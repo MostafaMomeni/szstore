@@ -1,0 +1,219 @@
+.top-header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.logo-top-header-parent{
+    display: flex;
+    align-items: center;
+    margin: 20px;
+    cursor: pointer;
+    color: black;
+}
+a{
+    text-decoration: none !important;
+    /* color: #45FFCA; */
+    /* color: #FEFFAC; */
+    /* color: #f2ffcd;
+    color: white; */
+}
+.img-top-logo-header{
+    width: 100px;
+    height: 100px;
+    margin-left: 20px;
+}
+.name-top-logo-header{
+    font-size: 22px;
+    color: var(--text-color);
+    font-weight: bold;
+    margin: 0;
+}
+.primary{
+    color: var(--primary-color);
+}
+.search-top-header{
+    border: 2px solid var(--primary-color);
+    border-radius: 25px;
+    padding: 10px 15px;
+    width: 190px;
+    transition: 0.3s;
+}
+.search-top-header-parent{
+    width: 260px;
+}
+.input-top-header{
+    border: none;
+    outline: none;
+    background-color: inherit;
+    margin: 5px;
+    transition: 0.3s;
+    width: 120px;
+    color: var(--text-color);
+}
+.icon-search-top-header{
+    font-size: 18px;
+    color: var(--primary-color);
+    cursor: pointer;
+}
+.input-top-header:focus{
+    width: 190px;
+}
+.search-top-header:has(>.input-top-header:focus){
+    width: 100%;
+}
+.icon-login-top-header-parent{
+    border: 1px solid var(--primary-color);
+    text-align: center;
+    padding: 10px;
+    margin-left: 10px;
+    border-radius: 50%;
+    color: var(--text-color);
+}
+.count-like-bag-top-header{
+    background-color: rgb(255, 38, 38);
+    border-radius: 50%;
+    padding: 2px;
+    text-align: center;
+    color: white;
+    font-size: 12px;
+    width: 22px;
+    height: 22px;
+    position: absolute;
+    top: -7px;
+    left: 15px;
+}
+.bag-like-top-header{
+    position: relative;
+    color: var(--text-color);
+}
+.bag-like-top-header-parent{
+    display: flex;
+    color: var(--text-color);
+}
+.bottom-header{
+    display: flex;
+    justify-content: space-between;
+}
+.ul-nav-bar{
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    color: var(--text-color);
+}
+.ul-nav-bar>li{
+    cursor: pointer;
+    transition: 0.3s;
+    padding: 10px 20px;
+    border-radius: 10px;
+    margin-left: 5px;
+}
+.ul-nav-bar>li:hover{
+    background-color: var(--primary-color);
+    color: white !important;
+}
+.active-link-nav-bar{
+    background-color: var(--primary-color);
+}
+.active-link-nav-bar>a{
+    color: white !important;
+}
+.li-link{
+    color: var(--text-color);
+    transition: 0.3s;
+}
+.ul-nav-bar>li:hover .li-link{
+    color: white;
+}
+.show-menu-header{
+    font-size: 20px;
+    cursor: pointer;
+}
+.close-map-header{
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0 , 0.5);
+    opacity: 0.4;
+    z-index: 100;
+}
+.pointer{
+    cursor: pointer;
+    color: var(--text-color);
+}
+.text-login-top-header{
+    color: var(--text-color);
+}
+@media(max-width:300px){
+    .close-map-header{
+        width: 30%;
+    }
+}
+/* //////////////// */
+
+.checkbox {
+  opacity: 0;
+  position: absolute;
+}
+
+.checkbox-label {
+  background-color: #111;
+  width: 61px;
+  height: 31px;
+  border-radius: 50px;
+  position: relative;
+  padding: 5px;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.moon-icon-dark-light-mode {color: #f1c40f;}
+
+.sun-icon-dark-light-mode {color: #f39c12;}
+
+.checkbox-label .ball {
+  background-color: #fff;
+  width: 27px;
+  height: 27px;
+  position: absolute;
+  left: 2px;
+  top: 2px;
+  border-radius: 50%;
+  transition: transform 0.2s linear;
+}
+
+.checkbox:checked + .checkbox-label .ball {
+  transform: translateX(30px);
+}
+
+
+
+
+
+
+
+
+
+/*  Support me if you like it */
+.support {
+	position: absolute;
+	right: 20px;
+	bottom: 20px;
+}
+
+.support a {
+  color: #292c35;
+  font-size: 32px;
+  backface-visibility: hidden;
+  display: inline-block;
+  transition: transform 0.2s ease;
+}
+
+.support a:hover{
+  transform: scale(1.1);
+}

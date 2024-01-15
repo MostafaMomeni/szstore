@@ -1,0 +1,25 @@
+.brands-box-parent{
+    text-align: center;
+    width: 100%;
+    height: 110px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.a-brand-box-parent{
+    padding: 4px 16px;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+.img-brands-box{
+    /* width: 200px !important;
+    height: 160px !important; */
+    object-fit: contain;
+    /* margin: auto; */
+    display: inline-block;
+    
+}

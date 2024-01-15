@@ -1,0 +1,117 @@
+.top-cart-box-parent{
+    border-bottom: 1px solid rgb(208, 208, 208);
+    text-align: center;
+    border-radius: 10px 10px 0 0;
+}
+.cart-box-parent{
+    display: inline-block;
+    width: 250px;
+    margin: 10px;
+    transition: 0.3s;
+    position: relative;
+    border-radius: 15px;
+    background: linear-gradient(45deg, var(--bg-card1) 0, var(--bg-card2) 70%);
+}
+.swiper-mode-cart-box{
+    width: 90% !important;
+}
+.img-cart-box{
+    width: 100%;
+    height: 100%;
+    transition: 0.3s;
+}
+.bottom-cart-box-parent{
+    padding: 5px 20px;
+    border-radius: 0 0 10px 10px;
+    text-align: right;
+    color: var(--text-color);
+}
+.price-cart-box{
+    color: var(--text-color);
+    font-size: 24px;
+}
+.top-cart-box-parent:hover .img-cart-box{
+    transform: scale(1.1);
+}
+.cart-box-parent{
+    background-color: white;
+    box-shadow: 0px 0px 15px 2px rgba(0,0,0,0.3);
+}
+.cart-box-parent:hover{
+    box-shadow: 0px 0px 17px 10px rgba(0,0,0,0.3);
+}
+.cart-box-parent:hover .off-box-cart-box-parent{
+    transform: rotate(0);
+    top: -15;
+    transform: scale(1.1);
+}
+.off-price-cart-box{
+    text-decoration: line-through;
+    color: white;
+    font-size: 14px;
+    font-weight: 500;
+}
+.off-box-cart-box-parent{
+    position: absolute;
+    width: 50px;
+    height: 30px;
+    background-color: red;
+    color: white;
+    border-radius: 10px;
+    text-align: center;
+    top: 2px;
+    left: -9px;
+    transform: rotate(-45deg);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 0.3s;
+}
+@media(max-width:682px){
+    .cart-box-parent{
+        width: 46%;
+    }
+}
+@media(max-width:576px){
+    .cart-box-parent{
+       width: 43%;
+       font-size: 14px;
+    }
+    .img-cart-box{
+        width: 100%;
+        height: auto;
+    }
+    .bottom-cart-box-parent{
+        padding: 5px 20px;
+    }
+    .price-cart-box{
+        font-size: 12px;
+    }
+    .off-price-cart-box{
+        font-size: 10px;
+    }
+}
+@media(max-width:510px){
+    .cart-box-parent{
+        width: 45%;
+        margin: 5px;
+        margin-top: 20px;
+    }
+    .title-bottom-cart-box{
+        font-size: 1rem;
+    }
+}
+@media(max-width:300px){
+    .title-bottom-cart-box{
+        font-size: 12px;
+    }
+    .price-cart-box{
+        font-size: 10px;
+    }
+    .off-price-cart-box{
+        font-size: 8px;
+    }
+    .category-cart-box {
+        font-size: 8px;
+    }
+}

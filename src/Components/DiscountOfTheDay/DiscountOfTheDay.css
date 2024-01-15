@@ -1,0 +1,35 @@
+.discount-of-the-day-parent{
+    background-color: var(--bg-gray);
+    padding-top: 20px;
+}
+.discount-of-the-day-item-parent{
+    width: 90%;
+    margin: auto;
+    margin-top: 50px;
+}
+.discount-of-the-day-item-parent>div{
+    padding-bottom: 50px;
+}
+#app {
+    height: 100%;
+  }
+  .swiper {
+    width: 100%;
+    height: 100%;
+  }
+  
+  .swiper-slide {
+    /* text-align: center; */
+    font-size: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
